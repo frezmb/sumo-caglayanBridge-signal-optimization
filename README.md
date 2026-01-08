@@ -17,6 +17,8 @@ Compared methods:
 1) Make sure SUMO is installed (sumo / sumo-gui should work).
 2) Open PowerShell in the project folder.
 3) Run one of the scripts:
+
+- `.\teknikler.ps1` (PowerShell in the project folder)
 - `.\run_gui.ps1` (run with GUI)
 - `.\sumoGuiAcici.ps1` (open SUMO GUI)
 - `.\karsilastir_4_yontem.ps1` (compare 4 methods)
@@ -49,6 +51,7 @@ Karşılaştırılan yöntemler:
 1) SUMO’nun kurulu olduğundan emin ol (sumo / sumo-gui çalışmalı).
 2) Proje klasöründe PowerShell aç.
 3) Aşağıdaki scriptlerden birini çalıştır:
+- `.\teknikler.ps1` (Proje Klasöründe PowerShell ile)
 - `.\run_gui.ps1` (GUI ile çalıştırma)
 - `.\sumoGuiAcici.ps1` (SUMO GUI açıcı)
 - `.\karsilastir_4_yontem.ps1` (4 yöntemi karşılaştırma)
