@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<additional>
+    
+
+    
+    <laneAreaDetector id="BRIDGE_TL_0_BR_K2D" lane="169691029_0" pos="0" length="82.53" freq="1" file="bridge_detectors.xml" />
+    <laneAreaDetector id="BRIDGE_TL_0_BR_D2K" lane="-169691029_0" pos="0" length="82.53" freq="1" file="bridge_detectors.xml" />
+
+    
+    <laneAreaDetector id="BRIDGE_TL_0_INT_D2K" lane=":caglayanD100Girisi_0_0" pos="0" length="1.03" freq="1" file="bridge_detectors.xml" />
+    <laneAreaDetector id="BRIDGE_TL_0_INT_K2D" lane=":caglayanKislaGirisi_1_0" pos="0" length="0.28" freq="1" file="bridge_detectors.xml" />
+
+    </additional>

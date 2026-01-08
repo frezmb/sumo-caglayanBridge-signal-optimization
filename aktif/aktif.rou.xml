@@ -1,0 +1,63 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd"><vType id="araba" accel="2.6" decel="4.5" length="5" maxSpeed="50" color="1,1,0" guiShape="passenger" emissionClass="HBEFA3/PC_G_EU4">
+        <param key="has.rerouting.device" value="true" />
+    </vType>
+           
+    <vType id="hizli_araba" accel="3.0" decel="4.5" length="5" maxSpeed="100" color="0,1,0" guiShape="passenger" lcKeepRight="0" lcSpeedGain="5.0" lcStrategic="1.0" lcCooperative="0.5" emissionClass="HBEFA3/PC_G_EU4">
+        <param key="has.rerouting.device" value="true" />
+    </vType>
+
+    <flow id="samsun_to_tokat_sabah" type="hizli_araba" begin="0" end="720" vehsPerHour="650" from="D100_Samsun_Giris" to="D100_Tokat_Cikis" departLane="best" departSpeed="max" />
+    <flow id="tokat_to_samsun_sabah" type="hizli_araba" begin="0" end="720" vehsPerHour="840" from="D100_Tokat_Giris" to="D100_Samsun_Cikis" departLane="best" departSpeed="max" />
+    <flow id="samsun_to_kisla_sabah" type="hizli_araba" begin="15" end="720" vehsPerHour="350" from="D100_Samsun_Giris" to="Kisla_Gelis" departLane="best" />
+    <flow id="tokat_to_kisla_sabah" type="hizli_araba" begin="15" end="720" vehsPerHour="280" from="D100_Tokat_Giris" to="Kisla_Gelis" departLane="best" />
+
+<flow id="samsun_to_alptekin_sabah" type="hizli_araba" begin="20" end="720" vehsPerHour="20" from="D100_Samsun_Giris" to="Alptekin_Cikis" />
+    <flow id="tokat_to_alptekin_sabah" type="hizli_araba" begin="25" end="720" vehsPerHour="20" from="D100_Tokat_Giris" to="Alptekin_Cikis" />
+    <flow id="kisla_to_samsun_sabah" type="araba" begin="30" end="720" vehsPerHour="96" from="Kisla_Donus" to="D100_Samsun_Cikis" departLane="best" />
+    <flow id="kisla_to_tokat_sabah" type="araba" begin="35" end="720" vehsPerHour="48" from="Kisla_Donus" to="D100_Tokat_Cikis" departLane="best" />
+    <flow id="alptekin_to_samsun_sabah" type="araba" begin="40" end="720" vehsPerHour="50" from="Alptekin_Giris" to="D100_Samsun_Cikis" departLane="best" />
+
+    <flow id="kisla_to_alptekin_sabah" type="araba" begin="45" end="720" vehsPerHour="60" from="Kisla_Donus" to="Alptekin_Cikis" />
+
+    <flow id="samsun_to_samsun_sabah" type="hizli_araba" begin="50" end="720" vehsPerHour="30" from="D100_Samsun_Giris" to="D100_Samsun_Cikis" />
+
+    <flow id="tokat_to_tokat_sabah" type="hizli_araba" begin="55" end="720" vehsPerHour="20" from="D100_Tokat_Giris" to="D100_Tokat_Cikis" />
+    <flow id="alptekin_to_kisla_sabah" type="araba" begin="60" end="720" vehsPerHour="60" from="Alptekin_Giris" to="Kisla_Gelis" />
+    <flow id="alptekin_to_tokat_sabah" type="araba" begin="65" end="720" vehsPerHour="40" from="Alptekin_Giris" to="D100_Tokat_Cikis" />
+    <flow id="samsun_to_tokat_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="500" from="D100_Samsun_Giris" to="D100_Tokat_Cikis" departLane="best" departSpeed="max" />
+    <flow id="tokat_to_samsun_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="600" from="D100_Tokat_Giris" to="D100_Samsun_Cikis" departLane="best" departSpeed="max" />
+    <flow id="samsun_to_kisla_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="250" from="D100_Samsun_Giris" to="Kisla_Gelis" departLane="best" />
+    <flow id="tokat_to_kisla_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="200" from="D100_Tokat_Giris" to="Kisla_Gelis" departLane="best" />
+
+<flow id="samsun_to_alptekin_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="20" from="D100_Samsun_Giris" to="Alptekin_Cikis" />
+    <flow id="tokat_to_alptekin_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="20" from="D100_Tokat_Giris" to="Alptekin_Cikis" />
+    <flow id="kisla_to_samsun_ogle" type="araba" begin="720" end="1440" vehsPerHour="120" from="Kisla_Donus" to="D100_Samsun_Cikis" departLane="best" />
+    <flow id="kisla_to_tokat_ogle" type="araba" begin="720" end="1440" vehsPerHour="60" from="Kisla_Donus" to="D100_Tokat_Cikis" departLane="best" />
+    <flow id="alptekin_to_samsun_ogle" type="araba" begin="720" end="1440" vehsPerHour="50" from="Alptekin_Giris" to="D100_Samsun_Cikis" departLane="best" />
+
+    <flow id="kisla_to_alptekin_ogle" type="araba" begin="720" end="1440" vehsPerHour="60" from="Kisla_Donus" to="Alptekin_Cikis" />
+
+    <flow id="samsun_to_samsun_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="30" from="D100_Samsun_Giris" to="D100_Samsun_Cikis" />
+
+    <flow id="tokat_to_tokat_ogle" type="hizli_araba" begin="720" end="1440" vehsPerHour="20" from="D100_Tokat_Giris" to="D100_Tokat_Cikis" />
+    <flow id="alptekin_to_kisla_ogle" type="araba" begin="720" end="1440" vehsPerHour="60" from="Alptekin_Giris" to="Kisla_Gelis" />
+    <flow id="alptekin_to_tokat_ogle" type="araba" begin="720" end="1440" vehsPerHour="40" from="Alptekin_Giris" to="D100_Tokat_Cikis" />
+    <flow id="samsun_to_tokat_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="700" from="D100_Samsun_Giris" to="D100_Tokat_Cikis" departLane="best" departSpeed="max" />
+    <flow id="tokat_to_samsun_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="780" from="D100_Tokat_Giris" to="D100_Samsun_Cikis" departLane="best" departSpeed="max" />
+    <flow id="samsun_to_kisla_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="275" from="D100_Samsun_Giris" to="Kisla_Gelis" departLane="best" />
+    <flow id="tokat_to_kisla_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="220" from="D100_Tokat_Giris" to="Kisla_Gelis" departLane="best" />
+
+<flow id="samsun_to_alptekin_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="20" from="D100_Samsun_Giris" to="Alptekin_Cikis" />
+    <flow id="tokat_to_alptekin_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="20" from="D100_Tokat_Giris" to="Alptekin_Cikis" />
+    <flow id="kisla_to_samsun_aksam" type="araba" begin="1440" end="2160" vehsPerHour="144" from="Kisla_Donus" to="D100_Samsun_Cikis" departLane="best" />
+    <flow id="kisla_to_tokat_aksam" type="araba" begin="1440" end="2160" vehsPerHour="72" from="Kisla_Donus" to="D100_Tokat_Cikis" departLane="best" />
+    <flow id="alptekin_to_samsun_aksam" type="araba" begin="1440" end="2160" vehsPerHour="50" from="Alptekin_Giris" to="D100_Samsun_Cikis" departLane="best" />
+
+    <flow id="kisla_to_alptekin_aksam" type="araba" begin="1440" end="2160" vehsPerHour="60" from="Kisla_Donus" to="Alptekin_Cikis" />
+
+    <flow id="samsun_to_samsun_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="30" from="D100_Samsun_Giris" to="D100_Samsun_Cikis" />
+
+    <flow id="tokat_to_tokat_aksam" type="hizli_araba" begin="1440" end="2160" vehsPerHour="20" from="D100_Tokat_Giris" to="D100_Tokat_Cikis" />
+    <flow id="alptekin_to_kisla_aksam" type="araba" begin="1440" end="2160" vehsPerHour="60" from="Alptekin_Giris" to="Kisla_Gelis" />
+    <flow id="alptekin_to_tokat_aksam" type="araba" begin="1440" end="2160" vehsPerHour="40" from="Alptekin_Giris" to="D100_Tokat_Cikis" />
+    </routes>
